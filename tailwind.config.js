@@ -4,7 +4,11 @@ module.exports = {
     "src/**/*.{js,jsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        arabic: ['Cairo', 'sans-serif']
+      }
+    },
   },
   plugins: [],
 }

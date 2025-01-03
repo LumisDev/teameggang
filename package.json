@@ -1,27 +1,20 @@
 {
   "scripts": {
-    "dev": "cross-env NODE_ENV=development rollup -c -w",
-    "build": "cross-env NODE_ENV=production rollup -c"
+    "dev": "rimraf dist && parcel src/index.html --dist-dir dist --no-cache --open",
+    "build": "rimraf dist && parcel build src/index.html --dist-dir dist --no-cache"
   },
   "devDependencies": {
-    "@babel/core": "^7.26.0",
-    "@babel/preset-env": "^7.26.0",
-    "@babel/preset-react": "^7.26.3",
-    "@rollup/plugin-babel": "^6.0.4",
-    "@rollup/plugin-commonjs": "^28.0.2",
-    "@rollup/plugin-html": "^1.1.0",
-    "@rollup/plugin-node-resolve": "^16.0.0",
-    "@rollup/plugin-replace": "^6.0.2",
-    "@rollup/plugin-terser": "^0.4.4",
-    "autoprefixer": "^10.4.20",
-    "cross-env": "^7.0.3",
+    "@react-three/drei": "^9.120.5",
+    "@react-three/fiber": "^8.17.10",
+    "framer-motion": "^11.15.0",
+    "parcel": "^2.13.3",
     "postcss": "^8.4.49",
+    "process": "^0.11.10",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "rollup": "^4.29.1",
-    "rollup-plugin-livereload": "^2.0.5",
-    "rollup-plugin-postcss": "^4.0.2",
-    "rollup-plugin-serve": "^1.1.1",
-    "tailwindcss": "^3.4.17"
+    "react-router": "^7.1.1",
+    "rimraf": "^6.0.1",
+    "tailwindcss": "^3.4.17",
+    "three": "^0.172.0"
   }
 }
